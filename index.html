@@ -3,15 +3,16 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Welcome — Pizza Project</title>
+		<title>Home — Pizza Museum</title>
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
+
 	<body>
 		<header>
 			<h1>Edgar Hernandez</h1>
 			<h2>Pizza Museum</h2>
-			<nav>
-				<a href="index.html">Home</a> |
+			<nav aria-label="Primary">
+				<a href="index.html" aria-current="page">Home</a> |
 				<a href="Pizzaingredients.html">Ingredients</a> |
 				<a href="Howto.html">Pizza Tutorial</a> |
 				<a href="history.html">History</a>
@@ -19,10 +20,50 @@
 		</header>
 
 		<main>
-			<section>
-				<h3>Introduction</h3>
-				<p>Explore tasty ingredients, learn how to make pizza, and read about its history.</p>
-				<p><a href="Pizzaingredients.html">See Ingredients</a></p>
+			<section class="hero" aria-labelledby="welcome">
+				<h3 id="welcome">Welcome to the Pizza Museum</h3>
+				<p>
+					This website merely talks about pizza: its history, its ingredients as well as toppings, and
+					a tutorial to make a few pizzas.
+				</p>
+			</section>
+
+			<section class="exhibits" aria-labelledby="exhibits">
+				<h3 id="exhibits">Exhibits</h3>
+				<div class="grid">
+					<article class="card">
+						<h4>History</h4>
+						<p>
+							Learn how pizza evolved and meet the people and places that helped shape it.
+						</p>
+						<p><a href="history.html"> History →</a></p>
+					</article>
+
+					<article class="card">
+						<h4>Tutorial</h4>
+						<p>
+							A beginner-friendly oven guide with steps and tips for popular pizza styles.
+						</p>
+						<p><a href="Howto.html">Tutorial →</a></p>
+					</article>
+
+					<article class="card">
+						<h4>Toppings/ingredients</h4>
+						<p>
+							Explore cheeses, meats, veggies, sauces, and extras that make each pizza unique.
+						</p>
+						<p><a href="Pizzaingredients.html">Ingredients →</a></p>
+					</article>
+				</div>
+			</section>
+
+			<section class="facts" aria-labelledby="facts">
+				<h3 id="facts">Did you know?</h3>
+				<ul class="fact-list">
+					<li>Small changes in oven temperature can make a big difference in crust texture.</li>
+					<li>Too much sauce can weigh down the dough and make the middle soggy.</li>
+					<li>Adding fresh herbs after baking keeps them brighter and more flavorful.</li>
+				</ul>
 			</section>
 		</main>
 
@@ -31,4 +72,3 @@
 		</footer>
 	</body>
 </html>
-
