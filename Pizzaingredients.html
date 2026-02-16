@@ -3,26 +3,190 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Welcome — Pizza Project</title>
+		<title>Ingredients — Pizza Museum</title>
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
+
 	<body>
 		<header>
 			<h1>Edgar Hernandez</h1>
 			<h2>Pizza Museum</h2>
-			<nav>
+			<nav aria-label="Primary">
 				<a href="index.html">Home</a> |
-				<a href="Pizzaingredients.html">Ingredients</a> |
+				<a href="Pizzaingredients.html" aria-current="page">Ingredients</a> |
 				<a href="Howto.html">Pizza Tutorial</a> |
 				<a href="history.html">History</a>
 			</nav>
 		</header>
 
 		<main>
-			<section class="ingredients">
-				<h3>Staple ingredients in Pizza</h3>
-				<p>Explore tasty ingredients, learn how to make pizza, and read about its history.</p>
-				<p><a href="Pizzaingredients.html">See Ingredients</a></p>
+	
+				<h3>Pizza Ingredients</h3>
+				<p>
+					Pizza toppings are what you can customize the most in a pizza, but it first needs a foundation in order to hold those ingredients.
+					Below are the foundational ingredients that help shape a pizza to change its overall textures or flavor. 
+					The description includes some of the textures that these ingredients can give to a pizza.
+				</p>
+
+			<section aria-labelledby="base">
+								<h3 id="basics">Foundational ingredients</h3>
+<table class="card">
+  <colgroup>
+    <col class="col-label">
+    <col class="col-dough">
+    <col class="col-sauce">
+    <col class="col-cheese">
+  </colgroup>
+
+  <thead>
+    <tr>
+      <th scope="col">Foundation</th>
+      <th scope="col">Types of Bread</th>
+      <th scope="col">Sauces</th>
+      <th scope="col">Cheese</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th scope="row">Name</th>
+      <td>
+		<ul>
+          <li>Classic</li>
+          <li>Thin crust</li>
+          <li>Pan style</li>
+        </ul>
+	  </td>
+      <td>
+		<ul>
+			<li>Tomato sauce</li>
+			<li>Garlic + olive oil</li>
+			<li>Pesto</li>
+			<li>BBQ sauce</li>
+			<li>Alfredo sauce</li>
+        </ul>
+	</td>
+      <td>
+		<ul>
+          <li>Mozzarella</li>
+          <li>Parmesan</li>
+          <li>Provolone</li>
+		  <li>Riscotta</li>
+		  <li>Cheddar</li>
+        </ul>
+	</td>
+    </tr>
+    <tr>
+      <th scope="row">Description</th>
+      <td>Defines texture: <ul>
+          <li>chewy</li>
+          <li>crisp</li>
+		  <li>crunchy</li>
+		  <li>thick with soft inside</li>
+        </ul>
+	</td>
+      <td>Sets flavor base:
+		<ul>
+          <li>bright</li>
+          <li>rich</li>
+          <li>herby</li>
+        </ul>
+	  </td>
+      <td>Adds melt:
+		<ul>
+          <li>smooth flavor</li>
+          <li>salty finish</li>
+          <li>sharp and bold</li>
+        </ul>
+	  </td>
+    </tr>
+  </tbody>
+</table>
+
+				<div class="grid">
+
+					<article class="card">
+						<h4>Cheeses</h4>
+						<ul>
+							<li>Mozzarella (classic melt)</li>
+							<li>Parmesan (salty finish)</li>
+							<li>Provolone (smooth flavor)</li>
+							<li>Ricotta (creamy dots)</li>
+							<li>Cheddar (sharp, bold)</li>
+						</ul>
+					</article>
+				</div>
+			</section>
+
+			<section aria-labelledby="toppings">
+				<h3 id="toppings">Toppings (the gallery)</h3>
+
+				<div class="grid">
+					<article class="card">
+						<h4>Meats</h4>
+						<ul>
+							<li>Pepperoni</li>
+							<li>Sausage</li>
+							<li>Ham</li>
+							<li>Bacon</li>
+							<li>Chicken</li>
+						</ul>
+					</article>
+
+					<article class="card">
+						<h4>Vegetables</h4>
+						<ul>
+							<li>Bell peppers</li>
+							<li>Onions</li>
+							<li>Mushrooms</li>
+							<li>Olives</li>
+							<li>Spinach</li>
+						</ul>
+					</article>
+
+					<article class="card">
+						<h4>Extras</h4>
+						<ul>
+							<li>Pineapple</li>
+							<li>Jalapeños</li>
+							<li>Fresh basil</li>
+							<li>Red pepper flakes</li>
+							<li>Drizzles: hot honey / ranch</li>
+						</ul>
+					</article>
+				</div>
+			</section>
+
+			<section aria-labelledby="glossary">
+				<h3 id="glossary">Ingredient glossary</h3>
+				<p>
+					This section uses a description list (term + definition) like a museum label.
+				</p>
+
+				<dl class="card">
+					<dt><strong>Mozzarella</strong></dt>
+					<dd>A mild cheese that melts smoothly and gives pizza its classic stretch.</dd>
+
+					<dt><strong>Pepperoni</strong></dt>
+					<dd>A spicy, cured meat that crisps at the edges when baked.</dd>
+
+					<dt><strong>Pesto</strong></dt>
+					<dd>A sauce made with herbs (often basil), garlic, oil, and cheese—bright and fragrant.</dd>
+
+					<dt><strong>Mushrooms</strong></dt>
+					<dd>Earthy flavor; slicing thin helps them cook evenly and avoid excess moisture.</dd>
+				</dl>
+			</section>
+
+			<section class="cta" aria-labelledby="pairings">
+				<h3 id="pairings">Quick pairing ideas</h3>
+				<ul>
+					<li><strong>Classic:</strong> tomato + mozzarella + basil</li>
+					<li><strong>Meaty:</strong> tomato + mozzarella + pepperoni + sausage</li>
+					<li><strong>Veggie:</strong> garlic oil + mozzarella + mushrooms + peppers + onions</li>
+					<li><strong>Sweet & spicy:</strong> ham + pineapple + jalapeños (optional!)</li>
+				</ul>
+				<p><a class="btn" href="Howto.html">Want to make a pizza? Head to Tutorial→</a></p>
 			</section>
 		</main>
 
@@ -31,4 +195,3 @@
 		</footer>
 	</body>
 </html>
-
