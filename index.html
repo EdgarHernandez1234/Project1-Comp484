@@ -8,22 +8,23 @@
 	</head>
 
 	<body>
-		<header>
-			<h1>Edgar Hernandez</h1>
+		<header role="banner">
+			<h1>Project 1</h1>
 			<h2>Pizza Museum</h2>
-			<nav aria-label="Primary">
-				<a href="index.html" aria-current="page">Home</a> |
-				<a href="Pizzaingredients.html">Ingredients</a> |
-				<a href="Howto.html">Pizza Tutorial</a> |
-				<a href="history.html">History</a>
+      <nav aria-label="Primary"> <!-- Holds the navigational links -->
+				<ul>
+        		<li><a href="index.html" aria-current="page">Home</a></li>
+				    <li><a href="Pizzaingredients.html">Ingredients</a></li>
+				    <li><a href="Howto.html">Pizza Tutorial</a></li>
+				    <li><a href="history.html">History</a></li>
+        </ul>
 			</nav>
 		</header>
 
-   <main>
-      <article class="card">
-        <section class="hero" aria-labelledby="welcome">
-          <h3 id="welcome">Welcome to the Pizza Museum</h3>
-
+   <main role="main">
+      <article role="article"class="card"> <!-- Article is used to group content that forms an independent part of a document, also uses card from CSS -->
+        <section>
+          <h3>Welcome to the Pizza Museum</h3>
           <p>
             This website merely talks about pizza: its history, its ingredients as well as toppings,
             and a tutorial to make a few pizzas. I wanted an excuse to make a website about pizza so
@@ -31,10 +32,8 @@
           </p>
         </section>
 
-        <section class="exhibit" aria-labelledby="exhibits">
-          <h3 id="exhibits">Introduction</h3>
-
-          <div class="">
+        <section class="exhibit"> <!-- uses the class "exhibit" from CSS-->
+          <h3>Introduction</h3>
             <section>
               <h4>History</h4>
               <p>
@@ -70,7 +69,7 @@
             </section>
 
             <section>
-              <h4>Toppings/ingredients</h4>
+              <h4>Ingredients</h4>
               <p>
                 <img
                   src="images/Toppings.png"
@@ -86,12 +85,10 @@
               </p>
               <p><a href="Pizzaingredients.html">Ingredients</a></p>
             </section>
-          </div>
         </section>
 
         <section class="facts" aria-labelledby="facts">
           <h3 id="facts">Did you know?</h3>
-
           <img
             src="images/FunFacts.png"
             alt="Facts"
@@ -99,8 +96,7 @@
             height="136"
             class="flowRight"
           />
-
-          <ul class="fact-list">
+          <ul>
             <li>Small changes in oven temperature can make a big difference in crust texture.</li>
             <li>Too much sauce can weigh down the dough and make the middle soggy.</li>
             <li>Adding fresh herbs after baking keeps them brighter and more flavorful.</li>
@@ -108,24 +104,13 @@
           </ul>
         </section>
 
-        <section class="sources" aria-labelledby="sources">
-          <h3 id="sources">Sources</h3>
+        <section>
+          <h3>Read more in:</h3>
           <ul>
-            <li>
-              <strong>Britannica:</strong>
-              <a href="https://www.britannica.com/topic/pizza" target="_blank" rel="noopener"
-                >Pizza</a
-              >
-            </li>
-            <li>
-              <strong>Smithsonian Magazine:</strong>
-              <a href="#" target="_blank" rel="noopener">Title of article</a>
-            </li>
-			<li>
-				<strong>HelloFresh:</strong> <a href="https://www.hellofresh.com/eat/history-of-food/history-of-pizza" target="_blank" rel="noopener">History of pizza</a>
-
-			</li>								
-		</ul>
+            <li><strong>Britannica: </strong><a href="https://www.britannica.com/topic/pizza" target="_blank" rel="noopener">Pizza</a></li>
+            <li><strong>Wikipedia: </strong><a href="https://en.wikipedia.org/wiki/History_of_pizza" target="_blank" rel="noopener">History of pizza</a></li>
+			      <li><strong>HelloFresh: </strong> <a href="https://www.hellofresh.com/eat/history-of-food/history-of-pizza" target="_blank" rel="noopener">History of Pizza: Who Invented It, and Where?</a></li>								
+		    </ul>
         </section>
       </article>
     </main>

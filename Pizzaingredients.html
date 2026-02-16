@@ -8,19 +8,21 @@
   </head>
 
   <body>
-    <header>
-      <h1>Edgar Hernandez</h1>
-      <h2>Pizza Museum</h2>
-
-      <nav aria-label="Primary">
-        <a href="index.html">Home</a> |
-        <a href="Pizzaingredients.html">Ingredients</a> |
-        <a href="Howto.html">Pizza Tutorial</a> |
-        <a href="history.html">History</a>
-      </nav>
+		<header role="banner">
+			<h1>Project 1</h1>
+			<h2>Pizza Museum</h2>
+			<nav aria-label="Primary"> <!-- Holds the navigational links -->
+				<ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+				<li><a href="Pizzaingredients.html">Ingredients</a></li>
+				<li><a href="Howto.html">Pizza Tutorial</a></li>
+				<li><a href="history.html">History</a></li>
+        </ul>
+			</nav>
     </header>
 
-    <main>
+		<main role="main">
+    <article role="article" class="card">
       <h3>Pizza Ingredients</h3>
       <p>
         Pizza toppings are what you can customize the most in a pizza, but it first needs a
@@ -29,20 +31,20 @@
         some of the textures that these ingredients can give to a pizza.
       </p>
 
-      <section aria-labelledby="basics">
-        <h3 id="basics">Foundational ingredients</h3>
+      <section>
+        <h3>Foundational ingredients</h3>
 
         <table class="card">
-          <colgroup>
-            <col class="col-label">
-            <col class="col-dough">
-            <col class="col-sauce">
-            <col class="col-cheese">
+          <colgroup> <!-- styles column structure for the table -->
+            <col> 
+            <col>
+            <col>
+            <col>
           </colgroup>
 
-          <thead>
-            <tr>
-              <th scope="col">Foundation</th>
+          <thead> <!-- Table header -->
+            <tr> <!-- Table row -->
+              <th scope="col">Foundation</th> <!-- Scope attribute indicates that this header applies to the column -->
               <th scope="col">Types of Bread</th>
               <th scope="col">Sauces</th>
               <th scope="col">Cheese</th>
@@ -111,8 +113,8 @@
         </table>
       </section>
 
-      <section aria-labelledby="toppings">
-        <h3 id="toppings">Toppings (the gallery)</h3>
+      <section>
+        <h3>Toppings (the gallery)</h3>
 
        <table class="card">
           <colgroup>
@@ -165,41 +167,80 @@
           </tbody>
         </table>
       </section>
-      </section>
+<section>
+  <h3>Ingredient glossary</h3>
 
-      <section aria-labelledby="glossary">
-        <h3 id="glossary">Ingredient glossary</h3>
-
-        <dl class="card"> <!-- Description list-->
-          <dt><strong>Mozzarella</strong></dt> <!-- Term and its definition-->
+  <dl class="card"> <!-- Description list-->
+    <div>
+      <dt>
+        <details> <!-- Details needed to use summary -->
+          <summary><strong>Mozzarella</strong></summary> <!-- Summary is the visible part that can be clicked to expand -->
           <dd>A mild cheese that melts smoothly and gives pizza its classic stretch.</dd>
+        </details>
+      </dt>
+    </div>
 
-          <dt><strong>Pepperoni</strong></dt>
+    <div>
+      <dt>
+        <details>
+          <summary><strong>Pepperoni</strong></summary>
           <dd>A spicy, cured meat that crisps at the edges when baked.</dd>
+        </details>
+      </dt>
+    </div>
 
-          <dt><strong>Pesto</strong></dt>
-          <dd>
-            A sauce made with herbs (often basil), garlic, oil, and cheese—bright and fragrant.
-          </dd>
+    <div>
+      <dt>
+        <details>
+          <summary><strong>Pesto</strong></summary>
+          <dd>A sauce made with herbs (often basil), garlic, oil, and cheese—bright and fragrant.</dd>
+        </details>
+      </dt>
+    </div>
 
-          <dt><strong>Mushrooms</strong></dt>
+    <div>
+      <dt>
+        <details>
+          <summary><strong>Mushrooms</strong></summary>
           <dd>Earthy flavor; slicing thin helps them cook evenly and avoid excess moisture.</dd>
-        </dl>
-      </section>
+        </details>
+      </dt>
+    </div>
+  </dl>
+</section>
 
-      <section class="card" aria-labelledby="pairings">
-        <h3 id="pairings">Quick pairing ideas</h3>
-        <ul>
-          <li><strong>Classic:</strong> tomato + mozzarella + basil</li>
-          <li><strong>Meaty:</strong> tomato + mozzarella + pepperoni + sausage</li>
-          <li><strong>Veggie:</strong> garlic oil + mozzarella + mushrooms + peppers + onions</li>
-          <li><strong>Sweet & spicy:</strong> ham + pineapple + jalapeños (optional!)</li>
-        </ul>
+<section>
+      <h3>Quick pairing ideas</h3>
+  <dl class="card"> <!-- Description list-->
+      <dt> <!-- Each dt is a term and each dd is a description -->
+        <details>
+          <summary><strong>Classic</strong></summary>
+          <dd>tomato + mozzarella + basil</dd>
+        </details>
 
-        <p>
-          <a class="btn" href="Howto.html">Want to make a pizza? Head to Tutorial→</a>
-        </p>
-      </section>
+      <dt>
+        <details>
+          <summary><strong>Meaty</strong></summary>
+          <dd>tomato + mozzarella + pepperoni + sausage.</dd>
+        </details>
+      </dt>
+
+      <dt>
+        <details>
+          <summary><strong>Veggie</strong></summary>
+          <dd>garlic oil + mozzarella + mushrooms + peppers + onions</dd>
+        </details>
+      </dt>
+
+      <dt>
+        <details>
+          <summary><strong>Sweet & spicy</strong></summary>
+          <dd>ham + pineapple + jalapeños (optional!)</dd>
+        </details>
+      </dt>
+  </dl>
+</section>
+</article>
     </main>
 
     <footer>
