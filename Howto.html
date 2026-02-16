@@ -3,27 +3,205 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Welcome — Pizza Project</title>
+		<title>Pizza Tutorial — Pizza Museum</title>
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
+
 	<body>
 		<header>
 			<h1>Edgar Hernandez</h1>
 			<h2>Pizza Museum</h2>
-			<nav>
+			<nav aria-label="Primary">
 				<a href="index.html">Home</a> |
 				<a href="Pizzaingredients.html">Ingredients</a> |
-				<a href="Howto.html">Pizza Tutorial</a> |
+				<a href="Howto.html" aria-current="page">Pizza Tutorial</a> |
 				<a href="history.html">History</a>
 			</nav>
 		</header>
 
 		<main>
-			<section class="hero">
-				<h3>How to make a pizza</h3>
-				<p>Explore tasty ingredients, learn how to make pizza, and read about its history.</p>
-				<p><a href="Pizzaingredients.html">See Ingredients</a></p>
+				<h3>Pizza Tutorial</h3>
+				<p>
+					A simple oven guide to making a few popular pizza styles at home.
+					These recipes use beginner-friendly steps and common ingredients.
+				</p>
+
+			<section aria-labelledby="basics">
+				<div class="grid">
+					<article class="card">
+						<h4>Quick dough checklist</h4>
+						<ul>
+							<li>Use room-temperature dough for easier stretching.</li>
+							<li>Flour your hands and surface to prevent sticking.</li>
+							<li>Stretch from the center outward—don’t crush the crust edge.</li>
+						</ul>
+					</article>
+
+					<article class="card">
+						<h4>Oven setup</h4>
+						<ul>
+							<li>Preheat oven as hot as it safely goes (usually 475–550°F).</li>
+							<li>Use a pizza stone/steel if you have one, preheated for 30 minutes.</li>
+							<li>If not, flip a sheet pan upside down and preheat it.</li>
+						</ul>
+					</article>
+
+					<article class="card">
+						<h4>Sauce + cheese tips</h4>
+						<ul>
+							<li>Less sauce = crispier pizza (too much can make it soggy).</li>
+							<li>Shred cheese fresh for better melt.</li>
+							<li>Add delicate toppings (basil/arugula) after baking.</li>
+						</ul>
+					</article>
+				</div>
 			</section>
+
+			<section aria-labelledby="recipes">
+				<h3 id="recipes">Recipes</h3>
+
+				<article class="recipe" aria-labelledby="margherita">
+					<header>
+						<h4 id="margherita">Margherita</h4>
+						<p>Classic, simple, and perfect for a “museum classic” exhibit.</p>
+					</header>
+
+					<div class="two-col">
+						<section aria-labelledby="margherita-ingredients">
+							<h5 id="margherita-ingredients">Ingredients</h5>
+							<ul>
+								<li>Pizza dough (1 ball)</li>
+								<li>Crushed tomatoes or pizza sauce</li>
+								<li>Fresh mozzarella (sliced or torn)</li>
+								<li>Fresh basil</li>
+								<li>Olive oil, salt</li>
+							</ul>
+						</section>
+
+						<section aria-labelledby="margherita-steps">
+							<h5 id="margherita-steps">Steps</h5>
+							<ol>
+								<li>Stretch dough into a round and place on a floured peel or parchment.</li>
+								<li>Spread a thin layer of sauce (leave a crust edge).</li>
+								<li>Add mozzarella, a drizzle of olive oil, and a pinch of salt.</li>
+								<li>Bake 8-12 minutes (until crust is browned and cheese bubbles).</li>
+								<li>Top with basil after baking.</li>
+							</ol>
+						</section>
+					</div>
+				</article>
+
+				<article class="recipe" aria-labelledby="pepperoni">
+					<header>
+						<h4 id="pepperoni">Pepperoni</h4>
+						<p>A popular favorite with a crispy edge and classic flavor.</p>
+					</header>
+
+					<div class="two-col">
+						<section aria-labelledby="pepperoni-ingredients">
+							<h5 id="pepperoni-ingredients">Ingredients</h5>
+							<ul>
+								<li>Pizza dough (1 ball)</li>
+								<li>Pizza sauce</li>
+								<li>Low-moisture mozzarella (shredded)</li>
+								<li>Pepperoni slices</li>
+								<li>Optional: chili flakes, oregano</li>
+							</ul>
+						</section>
+
+						<section aria-labelledby="pepperoni-steps">
+							<h5 id="pepperoni-steps">Steps</h5>
+							<ol>
+								<li>Stretch dough and place on parchment or a peel.</li>
+								<li>Add a thin layer of sauce.</li>
+								<li>Cover with mozzarella, then add pepperoni on top.</li>
+								<li>Bake 8–12 minutes until pepperoni cups and edges crisp.</li>
+								<li>Slice and serve (add chili flakes if you like heat).</li>
+							</ol>
+						</section>
+					</div>
+				</article>
+
+				<article class="recipe" aria-labelledby="veggie">
+					<header>
+						<h4 id="veggie">Veggie</h4>
+						<p>Colorful toppings—great if you want a “garden exhibit” feel.</p>
+					</header>
+
+					<div class="two-col">
+						<section aria-labelledby="veggie-ingredients">
+							<h5 id="veggie-ingredients">Ingredients</h5>
+							<ul>
+								<li>Pizza dough (1 ball)</li>
+								<li>Pizza sauce (or olive oil + garlic)</li>
+								<li>Mozzarella (shredded) or a mix of cheeses</li>
+								<li>Bell pepper, onion, mushrooms (thin sliced)</li>
+								<li>Optional: olives, spinach, cherry tomatoes</li>
+							</ul>
+						</section>
+
+						<section aria-labelledby="veggie-steps">
+							<h5 id="veggie-steps">Steps</h5>
+							<ol>
+								<li>Stretch dough and add sauce (or olive oil + garlic).</li>
+								<li>Add cheese first to protect the crust from watery veggies.</li>
+								<li>Scatter vegetables evenly (avoid piling too high).</li>
+								<li>Bake 9–13 minutes, until crust is browned and toppings soften.</li>
+								<li>If using spinach/arugula, add it after baking.</li>
+							</ol>
+						</section>
+					</div>
+				</article>
+			</section>
+
+			<section aria-labelledby="safety">
+				<h3 id="safety">Safety + doneness</h3>
+				<ul>
+					<li>Crust should be browned and firm underneath.</li>
+					<li>Cheese should be melted and bubbling (light browning is okay).</li>
+					<li>Let pizza rest 2 minutes before slicing for cleaner cuts.</li>
+				</ul>
+			</section>
+
+			<section class="cta" aria-labelledby="next">
+				<h3 id="next">Next exhibit</h3>
+				<p>
+					Want ideas for toppings? Visit the Ingredients exhibit for classic and creative options.
+				</p>
+				<p><a class="btn" href="Pizzaingredients.html">Go to Ingredients</a></p>
+			</section>
+			<table class="card">
+  			<colgroup>
+    		<col>
+    		<col>
+    		<col>
+  			</colgroup>
+  			<thead>
+    		<tr>
+      		<th scope="col">Style</th>
+      		<th scope="col">Oven Temp</th>
+      		<th scope="col">Bake Time</th>
+    		</tr>
+  			</thead>
+  			<tbody>
+    		<tr>
+      		<th scope="row">Thin crust</th>
+      		<td>500-550°F</td>
+      		<td>7-10 min</td>
+    		</tr>
+    		<tr>
+      		<th scope="row">Regular crust</th>
+      		<td>475-525°F</td>
+      		<td>9-13 min</td>
+    		</tr>
+    		<tr>
+      		<th scope="row">Pan style</th>
+      		<td>450-500°F</td>
+      		<td>12-18 min</td>
+    		</tr>
+  			</tbody>
+			</table>
+
 		</main>
 
 		<footer>
@@ -31,4 +209,3 @@
 		</footer>
 	</body>
 </html>
-
