@@ -3,26 +3,164 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Welcome — Pizza Project</title>
+		<title>History — Pizza Museum</title>
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
+
 	<body>
 		<header>
 			<h1>Edgar Hernandez</h1>
 			<h2>Pizza Museum</h2>
-			<nav>
+			<nav aria-label="Primary">
 				<a href="index.html">Home</a> |
 				<a href="Pizzaingredients.html">Ingredients</a> |
 				<a href="Howto.html">Pizza Tutorial</a> |
-				<a href="history.html">History</a>
+				<a href="history.html" aria-current="page">History</a>
 			</nav>
 		</header>
 
 		<main>
-			<section class="hero">
-				<h3>The origin of Pizza</h3>
-				<p>Explore tasty ingredients, learn how to make pizza, and read about its history.</p>
-				<p><a class="btn" href="Pizzaingredients.html">See Ingredients</a></p>
+				<h3>History of Pizza</h3>
+				<p>
+					<!-- 2–3 sentences: what visitors will learn + what your timeline covers -->
+					Pizza has a long story, from early flatbreads to modern Neapolitan pizza and global styles.
+					This exhibit highlights key milestones and people connected to pizza’s rise.
+				</p>
+		
+
+			<section aria-labelledby="overview">
+				<h3 id="overview">Quick overview</h3>
+				<p>
+					<!-- Write a short summary paragraph (keep it broad + accurate). -->
+					<!-- Example: “Many cultures made flatbreads with toppings, but the modern pizza we recognize
+					took shape in Naples…” -->
+				</p>
+			</section>
+
+			<section aria-labelledby="timeline">
+				<h3 id="timeline">Timeline</h3>
+				<ol class="timeline">
+					<li class="timeline-item">
+						<h4><time datetime="1700">1700s–1800s</time> — Early modern pizza in Naples</h4>
+						<p>
+							<!-- 1–3 sentences describing what happened -->
+						</p>
+						<p class="source-note">
+							<strong>Source:</strong> <!-- Put a short source label here (e.g., Britannica) -->
+						</p>
+					</li>
+
+					<li class="timeline-item">
+						<h4><time datetime="1889">1889</time> — The Pizza Margherita story</h4>
+						<p>
+							<!-- Mention this carefully if you include it (it’s often told, but debated). -->
+						</p>
+						<p class="source-note">
+							<strong>Source:</strong>
+						</p>
+					</li>
+
+					<li class="timeline-item">
+						<h4><time datetime="1905">1905</time> — Pizza spreads internationally (example)</h4>
+						<p>
+							<!-- Replace with a date/event you can confirm -->
+						</p>
+						<p class="source-note">
+							<strong>Source:</strong>
+						</p>
+					</li>
+
+					<!-- Add 3–6 timeline items total for a solid school project -->
+				</ol>
+			</section>
+
+			<section aria-labelledby="figures">
+				<h3 id="figures">Key figures</h3>
+
+				<article class="card figure">
+					<h4><!-- Person name --></h4>
+					<p class="figure-role"><!-- Who they were / why they matter --></p>
+					<p>
+						<!-- 3–5 sentences about their connection to pizza -->
+					</p>
+					<p class="source-note">
+						<strong>Source:</strong>
+					</p>
+				</article>
+
+				<article class="card figure">
+					<h4><!-- Person name --></h4>
+					<p class="figure-role"><!-- Who they were / why they matter --></p>
+					<p>
+						<!-- 3–5 sentences -->
+					</p>
+					<p class="source-note">
+						<strong>Source:</strong>
+					</p>
+				</article>
+
+				<!-- Tip: 2–4 figures is usually plenty -->
+			</section>
+
+			<section aria-labelledby="myths">
+				<h3 id="myths">Legends and debates</h3>
+				<p>
+					<!-- Optional but smart: a short note that some origin stories are debated. -->
+					<!-- This shows you understand “history” isn’t always 100% certain. -->
+				</p>
+			</section>
+				<section class="card quiz" aria-labelledby="history-quiz">
+  				<h3 id="history-quiz">Museum Quiz</h3>
+  				<p>
+    			Question: Which city is most closely associated with the origin of modern pizza?
+  				</p>
+
+  				<form action="#" method="get">
+    			<label for="pizza-city"><strong>Your answer:</strong></label><br>
+
+    			<input
+      			id="pizza-city"
+      			name="pizza-city"
+      			type="text"
+      			required
+      			minlength="3"
+      			maxlength="12"
+      			placeholder="Type the city name…"
+      			pattern="[Nn]aples"
+      			title="Hint: It starts with N and is in Italy."
+    			>
+
+    <p class="feedback ok" aria-live="polite">✅ Correct! Naples is strongly associated with modern pizza.</p>
+    <p class="feedback bad" aria-live="polite">❌ Not quite. Try again (hint: starts with N).</p>
+  </form>
+
+  <details class="card">
+    <summary><strong>Need a hint?</strong></summary>
+    <p>It’s a famous city in southern Italy often linked to the pizza we know today.</p>
+  </details>
+</section>
+
+			<section aria-labelledby="sources">
+				<h3 id="sources">Sources</h3>
+				<p>Use these references to verify dates, names, and key claims:</p>
+				<ul class="sources">
+					<li>
+						<strong>Britannica:</strong> <a href="https://www.britannica.com/topic/How-Was-Pizza-Invented" target="_blank" rel="noopener">Title of article</a>
+					</li>
+					<li>
+						<strong>Smithsonian Magazine:</strong> <a href="https://www.smithsonianmag.com/travel/naples-pizza-original-fast-food-180976992/" target="_blank" rel="noopener">Title of article</a>
+					</li>
+					<li>
+						<strong>AVPN:</strong> <a href="https://www.pizzanapoletana.org/en/storia_avpn" target="_blank" rel="noopener">History of AVPN</a>
+					</li>
+
+				</ul>
+			</section>
+
+			<section class="cta" aria-labelledby="next">
+				<h3 id="next">Next exhibit</h3>
+				<p>Ready to explore what goes on a pizza?</p>
+				<p><a class="btn" href="Pizzaingredients.html">Visit Pizza Ingredients</a></p>
 			</section>
 		</main>
 
@@ -31,4 +169,3 @@
 		</footer>
 	</body>
 </html>
-
