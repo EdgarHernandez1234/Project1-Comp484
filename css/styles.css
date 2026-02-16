@@ -6,9 +6,45 @@ body, html {
     padding: 0;
 }
 h1, h2, h3, h4, h5, h6, p {
-	margin: 0;
-	padding: 0;
+  padding-top: 10px;
+  margin-bottom: 10px;
 }
+
+
+.grid { /* Grid for exhibits */
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Links */
+a {
+  color: #8b4513;
+}
+
+.card {
+  max-width: 980px;
+  margin: 0 auto;
+  background: #fff;
+  border: 2px solid #e2c2a6;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+/* Typography + spacing */
+p, li {
+  line-height: 1.6;
+}
+
 header {
     background-color: #d4512f;
     color: #fff;
@@ -16,10 +52,6 @@ header {
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
 
 footer {
     background-color: #8b4513;
@@ -27,10 +59,6 @@ footer {
     padding: 15px;
     text-align: center;
     margin-top: 40px;
-}
-
-footer p {
-    margin: 0;
 }
 
 input {
@@ -52,10 +80,6 @@ th, td {
   text-align: left;
 }
 
-details summary {
-  cursor: pointer;
-  padding: 6px 0;
-}
 .flowRight {
 	float: right;
 	margin-left: 10px;
@@ -69,13 +93,25 @@ details summary {
 	text-align: center;
 }
 
-.media {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+/* Facts list */
+.fact-list {
+  margin-top: 10px;
+  padding-left: 18px;
 }
 
-.media-img {
-  width: 200px;
-  height: auto;
+/* Layout container + card */
+main {
+  padding: 24px 16px;
+}
+
+/* Equal-height exhibit cards */
+.exhibit {
+  background: #fffaf4;
+  border: 1px solid #e2c2a6;
+  border-radius: 16px;
+  padding: 14px;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
