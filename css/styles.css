@@ -52,3 +52,29 @@ details summary {
   cursor: pointer;
   padding: 6px 0;
 }
+
+/* Layout for the “Introduction” tiles */
+.grid {
+  display: grid;
+  gap: 24px;
+}
+
+.feature {
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.feature__content {
+  display: grid;
+  grid-template-columns: 1fr auto; /* text left, image right */
+  gap: 16px;
+  align-items: start;
+}
+
+.feature__content img {
+  max-width: 220px;      /* keeps images reasonable */
+  height: auto;          /* preserves aspect ratio */
+  border-radius: 10px;
+}
+
