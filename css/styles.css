@@ -6,53 +6,33 @@ body, html {
     padding: 0;
 }
 h1, h2, h3, h4, h5, h6, p {
-  padding-top: 10px;
-  margin-bottom: 10px;
+  padding-top: 10px; /* Consistent spacing for headings and paragraphs */
+  margin-bottom: 10px; /* Consistent spacing for headings and paragraphs */
 }
-
-
-.grid { /* Grid for exhibits */
-  display: grid;
-  gap: 16px;
-  grid-template-columns: 1fr;
-}
-.nav {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 /* Links */
 a {
   color: #8b4513;
 }
+a:hover {
+	color: rgb(115, 35, 0);
+}
 
-.card {
+.card { /* Card component for content sections */
   max-width: 980px;
-  margin: 0 auto;
+  margin: 0 auto; /* Centers card */
   background: #fff;
-  border: 2px solid #e2c2a6;
-  border-radius: 14px;
-  padding: 20px;
+  border: 2px solid #e2c2a6; /* defines border width, style, and color */
+  border-radius: 14px; /* makes corners rounded  */
+  padding: 20px; /* Consistent padding for all cards */
 }
-
-/* Typography + spacing */
 p, li {
-  line-height: 1.6;
+  line-height: 1.6; /* Improved readability with more space between lines */
 }
-
 header {
     background-color: #d4512f;
     color: #fff;
     padding: 20px;
-    text-align: center;
 }
-
-
 footer {
     background-color: #8b4513;
     color: #fff;
@@ -60,26 +40,22 @@ footer {
     text-align: center;
     margin-top: 40px;
 }
-
-input {
+input { /* Styles for form inputs */
   padding: 10px;
   border-radius: 10px;
   border: 2px solid #e2c2a6;
   width: min(420px, 100%);
   margin-top: 8px;
 }
-
 table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: collapse; /* Ensures borders are shared between cells for a cleaner look */
 }
-
 th, td {
   padding: 10px;
   border-bottom: 1px solid #e2c2a6;
   text-align: left;
 }
-
 .flowRight {
 	float: right;
 	margin-left: 10px;
@@ -88,24 +64,10 @@ th, td {
 	float: left;
 	margin-right: 10px;
 }
-
-.center {
-	text-align: center;
-}
-
-/* Facts list */
-.fact-list {
-  margin-top: 10px;
-  padding-left: 18px;
-}
-
-/* Layout container + card */
-main {
+main { /* Layout container + card */
   padding: 24px 16px;
 }
-
-/* Equal-height exhibit cards */
-.exhibit {
+.exhibit { /* Equal-height exhibit cards */
   background: #fffaf4;
   border: 1px solid #e2c2a6;
   border-radius: 16px;
