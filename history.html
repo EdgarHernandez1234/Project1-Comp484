@@ -8,25 +8,28 @@
 	</head>
 
 	<body>
-		<header>
-			<h1>Edgar Hernandez</h1>
+		<header role="banner">
+			<h1>Project 1</h1>
 			<h2>Pizza Museum</h2>
-			<nav aria-label="Primary">
-				<a href="index.html">Home</a> |
-				<a href="Pizzaingredients.html">Ingredients</a> |
-				<a href="Howto.html">Pizza Tutorial</a> |
-				<a href="history.html" aria-current="page">History</a>
+			<nav aria-label="Primary"> <!-- Holds the navigational links -->
+			<ul>
+        		<li><a href="index.html" aria-current="page">Home</a></li>
+				<li><a href="Pizzaingredients.html">Ingredients</a></li>
+				<li><a href="Howto.html">Pizza Tutorial</a></li>
+				<li><a href="history.html">History</a></li>
+        	</ul>
 			</nav>
 		</header>
 
-		<main>
+		<main role="main">
+			<article class="card">
 				<h3>History of Pizza</h3>
 				<p>
-					This exhibit focuses on how modern pizza took shape in Naples, how the famous “Margherita”
+					This web page focuses on how modern pizza took shape in Naples, how the famous “Margherita”
 					story became part of pizza culture, and how traditions are still protected today.
 				</p>
-	
 
+			<section class="exhibit" aria-labelledby="timeline">
 			<section aria-labelledby="overview">
 				<h3 id="overview">Quick overview</h3>
 				<p>
@@ -40,16 +43,14 @@
 					<a href="https://www.smithsonianmag.com/travel/naples-pizza-original-fast-food-180976992/" target="_blank" rel="noopener">Smithsonian</a>
 				</p>
 			</section>
-
-			<section class="card" aria-labelledby="timeline">
 				<h3 id="timeline">Timeline highlights</h3>
 
 				<ol class="timeline">
 					<li class="timeline-item">
 						<h4>Naples becomes the home of modern pizza</h4>
 						<p>
-							Over time, Naples developed a strong pizza tradition and a culture of skilled pizza makers
-							(“pizzaioli”), helping shape what many people think of as classic pizza today.
+							Over time, Naples developed a strong pizza tradition and a culture of pizza makers, 
+							known as “pizzaioli”, helped shape what many people think of as classic pizza today.
 						</p>
 						<p class="source-note">
 							<strong>Sources:</strong>
@@ -58,8 +59,8 @@
 						</p>
 					</li>
 
-					<li class="timeline-item">
-						<h4><time datetime="1889">1889</time> — The “Margherita” story becomes famous</h4>
+					<li>
+						<h4>1889 — The “Margherita” story becomes famous</h4>
 						<p>
 							A widely repeated story connects the toppings tomato (red), mozzarella (white), and basil
 							(green) to Queen Margherita of Savoy and the colors of the Italian flag. This connection is
@@ -72,8 +73,8 @@
 						</p>
 					</li>
 
-					<li class="timeline-item">
-						<h4><time datetime="1905">1905</time> — Pizza spreads internationally (example: United States)</h4>
+					<li>
+						<h4>1905 — Pizza spreads internationally (example: United States)</h4>
 						<p>
 							As Italian immigrants brought their food traditions abroad, pizza gained new audiences.
 							One well-known milestone is the opening of a licensed pizzeria in New York in the early 1900s.
@@ -87,8 +88,8 @@
 					<li class="timeline-item">
 						<h4>After World War II — popularity grows even more</h4>
 						<p>
-							Pizza's popularity expanded quickly after World War II, especially in the United States,
-							and regional styles developed as it spread.
+							Pizza's popularity expanded quickly after World War II, which also included in the United States,
+							and regional styles developed overtime.
 						</p>
 						<p class="source-note">
 							<strong>Source:</strong>
@@ -97,9 +98,9 @@
 					</li>
 
 					<li class="timeline-item">
-						<h4><time datetime="1984">1984</time> — AVPN forms to protect true Neapolitan pizza</h4>
+						<h4>1984 — AVPN forms to protect true Neapolitan pizza</h4>
 						<p>
-							In Naples, a group of master pizza makers formed the Associazione Verace Pizza Napoletana
+							In Naples, a group of pizza makers formed the Associazione Verace Pizza Napoletana
 							(AVPN) and registered rules meant to protect and preserve “true Neapolitan pizza.”
 						</p>
 						<p class="source-note">
@@ -113,7 +114,7 @@
 			<section aria-labelledby="figures">
 				<h3 id="figures">Key figures</h3>
 
-				<article class="card figure">
+				<article class="exhibit">
 					<h4>Queen Margherita of Savoy</h4>
 					<p class="figure-role">Italian queen associated with the Margherita pizza story</p>
 					<p>
@@ -125,10 +126,7 @@
 						<strong>Source:</strong>
 						<a href="https://www.britannica.com/topic/How-Was-Pizza-Invented" target="_blank" rel="noopener">Britannica</a>
 					</p>
-				</article>
-
-				<article class="card figure">
-					<h4>Raffaele Esposito</h4>
+										<h4>Raffaele Esposito</h4>
 					<p class="figure-role">Neapolitan pizzaiolo often credited in the 1889 Margherita story</p>
 					<p>
 						The creation of Pizza Margherita is often attributed to Raffaele Esposito in 1889, where he is
@@ -142,12 +140,32 @@
 					</p>
 				</article>
 			</section>
-
+<section>
+	<h3>1 Question Quiz</h3>
+	<p>Who is often credited with creating the Margherita pizza in 1889?</p>
+	<form> <!-- The form element is used to collect user input. In this case, it's a quiz question but it doesn't actually take input without JavaScript. -->
+  <label for="full-name">Type the full name (15-30 characters):</label>
+  <input
+    id="full-name"
+    name="full-name"
+    type="text"
+    minlength="15"
+    maxlength="30"
+    placeholder="hint: its one of the two names stated in the key figures section"
+    required
+  />
+  <details>
+    <summary>Show answer</summary>
+    <p><strong>Answer:</strong> Raffaele Esposito</p>
+  </details>
+</form>
+</section>
 			<section aria-labelledby="sources">
 				<h3 id="sources">Sources</h3>
+				<div class="card">
 				<ul class="sources">
 					<li>
-						<strong>Encyclopaedia Britannica:</strong>
+						<strong>Britannica:</strong>
 						<a href="https://www.britannica.com/topic/How-Was-Pizza-Invented" target="_blank" rel="noopener">
 							How Was Pizza Invented?
 						</a>
@@ -171,7 +189,9 @@
 						</a>
 					</li>
 				</ul>
+				</div>
 			</section>
+			</article>
 		</main>
 
 		<footer>
